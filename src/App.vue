@@ -8,7 +8,8 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import oclock from './view/oclock'
+import oclock from './view/oclock/oclockPhone'
+// import oclock from './view/oclock/oclock'
 export default {
   name: 'app',
   components: {
