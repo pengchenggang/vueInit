@@ -1,7 +1,8 @@
 <template>
   <div style="margin-top:80px;"
        @click="clickPhoneHandle">
-    <oneOclock v-if="oVif" />
+    <oneOclock ref='oOclock'
+               v-if="oVif" />
   </div>
 </template>
 
@@ -21,10 +22,11 @@ export default {
   computed: {},
   methods: {
     clickPhoneHandle () {
-      this.oVif = false
-      this.$nextTick(() => {
-        this.oVif = true
-      })
+      // this.oVif = false
+      // this.$nextTick(() => {
+      //   this.oVif = true
+      // })
+      this.$refs.oOclock.init()
     }
   },
   created () { },

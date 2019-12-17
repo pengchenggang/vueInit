@@ -2,11 +2,11 @@
   <div class="oneOclock">
     <div class="biaopan">
       <div class="fenzhen"
-           :style="{transform: 'rotate('+innerFenzhen+'deg)'}">
+           :style="{transform: 'rotate('+innerFenzhen+'deg)','WebkitTransition':'0.5s'}">
 
       </div>
       <div class="shizhen"
-           :style="{transform: 'rotate('+innerShizhen+'deg)'}"></div>
+           :style="{transform: 'rotate('+innerShizhen+'deg)','WebkitTransition':'0.5s'}"></div>
     </div>
     <div class="dangqianshijian">
       当前时间：______________________
@@ -96,6 +96,7 @@ export default {
       width: 300px;
       height: 300px;
       background-image: url(images/fenzhen.png);
+      -webkit-transition: 0.5s;
     }
     .shizhen {
       position: absolute;
