@@ -2,19 +2,22 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <oclock />
+    <!-- <oclock /> -->
+    <GradeTwoMath />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import oclock from './view/oclock/oclockPhone'
+// import oclock from './view/oclock/oclockPhone'
 // import oclock from './view/oclock/oclock'
+import GradeTwoMath from './view/GradeTwoMath'
 export default {
   name: 'app',
   components: {
     // HelloWorld
-    oclock
+    // oclock
+    GradeTwoMath
   }
 }
 </script>
